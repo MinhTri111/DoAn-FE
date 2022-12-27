@@ -26,7 +26,7 @@ export default function SearchComponent({ kanji }) {
       const form = new FormData();
       form.append("data", dataFinal);
       const res = await axios
-        .post("http://103.170.122.206/model", form, {
+        .post("https://907a-14-236-7-220.ap.ngrok.io/model", form, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
